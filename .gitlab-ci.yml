@@ -1,0 +1,10 @@
+pages:
+  stage: deploy
+  script:
+  - pwd
+  - rm -rf *
+  - cd /home/fills/public_html/
+  - git status
+  - git pull origin master
+  only:
+  - master
